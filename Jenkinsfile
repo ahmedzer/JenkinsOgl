@@ -4,9 +4,13 @@ pipeline {
   stage('Test'){
               steps {
                   bat './gradlew test'
-                  junit skipPublishingChecks: true, testResults: 'reports/junitT.html'
               }
           }
 }
+post {
+      always {
+        junit '**/reports/junit/*.xml'
+      }
+   }
 
 }
