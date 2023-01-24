@@ -4,7 +4,7 @@ pipeline {
   stage('Test'){
               steps {
                   bat './gradlew test'
-                  junit skipPublishingChecks: true, testResults: '**/testOgl_*.xml'
+                  junit skipPublishingChecks: true, testResults: 'reports/junitT.html'
               }
           }
 }
