@@ -5,6 +5,7 @@ pipeline {
               steps {
                   bat './gradlew test'
                   bat './gradlew sonarqube'
+                  bat './gradlew detekt'
               }
 
           }
