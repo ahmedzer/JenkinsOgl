@@ -3,7 +3,7 @@ pipeline {
   stages {
   stage('Test'){
               steps {
-                  sh './gradlew test'
+                  bat './gradlew test'
                   junit 'reports/junitT.xml'
               }
           }
