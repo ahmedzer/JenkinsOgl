@@ -4,11 +4,11 @@ pipeline {
   stage('Test'){
               steps {
                   bat './gradlew test'
+                  bat './gradlew sonarqube'
               }
+
           }
-  stage('SonarQube analysis') {
-  bat './gradlew sonarqube'
-  }
+
 }
 post {
       always {
