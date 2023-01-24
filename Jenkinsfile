@@ -6,10 +6,13 @@ pipeline {
                   bat './gradlew test'
               }
           }
+  stage('SonarQube analysis') {
+  bat './gradlew sonarqube'
+  }
 }
 post {
       always {
-        junit 'reports/junitT.html'
+        junit skipPublishingChecks: true, testResults: 'reports/junitT.html'
       }
    }
 
