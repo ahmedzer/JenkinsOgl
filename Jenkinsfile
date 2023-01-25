@@ -34,6 +34,9 @@ pipeline {
                         }
 
                     }
+                    stage('publish') {
+                    bat './gradlew publish'
+                    }
 }
 post {
       always {
