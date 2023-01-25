@@ -9,10 +9,10 @@ pipeline {
 
           }
           stage('sonar') {
-          withSonarQubeEnv() {
-          bat './gradlew sonarqube'
-          }
-
+            steps {
+            bat './gradlew sonarqube'
+            waitForQualityGate abortPipeline: true
+            }
           }
           /*stage("Quality Gate") {
                       steps {
