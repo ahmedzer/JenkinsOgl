@@ -34,10 +34,15 @@ pipeline {
                         }
 
                     }
-                    stage('publish') {
+                    stage('deploy') {
                     steps {
                      bat './gradlew publish'
                     }
+                    post{
+                                                always{
+                                                    slackSend( channel: "#Jenkins", token: "https://hooks.slack.com/services/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", color: "good", message: "New Build")
+                                                }
+                                            }
 
                     }
 }
