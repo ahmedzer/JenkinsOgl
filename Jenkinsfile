@@ -35,7 +35,10 @@ pipeline {
 
                     }
                     stage('publish') {
-                    bat './gradlew publish'
+                    steps {
+                     bat './gradlew publish'
+                    }
+
                     }
 }
 post {
