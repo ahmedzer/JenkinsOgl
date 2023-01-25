@@ -10,9 +10,9 @@ pipeline {
           }
           stage('sonar') {
             steps {
-
+            withSonarQubeEnv('SonarQube') {
                                 bat "./gradlew sonarqube"
-
+                            }
 
             }
           }
@@ -24,7 +24,6 @@ pipeline {
                           }
                       }
                   }
-
 }
 post {
       always {
