@@ -24,10 +24,21 @@ pipeline {
                           }
                       }
                   }
+          stage('build'){
+                        steps {
+                            bat './gradlew build'
+                            bat './gradlew jar'
+                            bat './gradlew javadoc'
+                            archiveArtifacts 'build/libs/*.jar'
+
+                        }
+
+                    }
 }
 post {
       always {
         junit skipPublishingChecks: true, testResults: 'build/test-results/test/TEST-Matrix.xml'
+        archiveArtifacts 'build/test-results/test/TEST-Matrix.xml'
       }
    }
 }
