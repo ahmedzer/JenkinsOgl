@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "JenkinsOgl",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "JenkinsOgl-1.0.jar",
+          "url": "JenkinsOgl-1.0.jar",
+          "size": 3858,
+          "sha512": "d377b9f2b8576dc1f888705ac2670df8a925f6172b6ef368f629b289d8e78ab614d53714b5f1bcea5df61c85225db820d814895749bc20efb6b97dd219424116",
+          "sha256": "bdf8325628c560f8fddd6b6ca3d7b33b52bc6f5512a11168db876a3ba4873ea2",
+          "sha1": "1d1ac3d834674e56a7d68a9940b2d12931c8a075",
+          "md5": "3455812db5c78fe30d64bf3c2bc1f7b8"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "JenkinsOgl-1.0.jar",
+          "url": "JenkinsOgl-1.0.jar",
+          "size": 3858,
+          "sha512": "d377b9f2b8576dc1f888705ac2670df8a925f6172b6ef368f629b289d8e78ab614d53714b5f1bcea5df61c85225db820d814895749bc20efb6b97dd219424116",
+          "sha256": "bdf8325628c560f8fddd6b6ca3d7b33b52bc6f5512a11168db876a3ba4873ea2",
+          "sha1": "1d1ac3d834674e56a7d68a9940b2d12931c8a075",
+          "md5": "3455812db5c78fe30d64bf3c2bc1f7b8"
+        }
+      ]
+    }
+  ]
+}

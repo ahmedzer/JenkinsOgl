@@ -1,0 +1,9 @@
+-classpath 'D:\\PDC\\JenkinsOgl\\build\\classes\\java\\main;D:\\PDC\\JenkinsOgl\\build\\resources\\main'
+-d 'D:\\PDC\\JenkinsOgl\\build\\docs\\javadoc'
+-doctitle 'JenkinsOgl 1.0 API'
+-notimestamp 
+-quiet 
+-windowtitle 'JenkinsOgl 1.0 API'
+'D:\\PDC\\JenkinsOgl\\src\\main\\java\\com\\example\\exception\\NoSquareException.java'
+'D:\\PDC\\JenkinsOgl\\src\\main\\java\\com\\example\\model\\Matrix.java'
+'D:\\PDC\\JenkinsOgl\\src\\main\\java\\com\\example\\service\\MatrixMathematics.java'
