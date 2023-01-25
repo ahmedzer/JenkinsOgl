@@ -27,8 +27,7 @@ pipeline {
 }
 post {
       always {
-        junit skipPublishingChecks: true, testResults: 'reports/junitT.html'
+        junit skipPublishingChecks: true, testResults: 'build/test-results/test/TEST-Matrix.xml'
       }
    }
-
 }
