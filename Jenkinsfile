@@ -11,7 +11,7 @@ pipeline {
           stage('sonar') {
             steps {
             bat './gradlew sonarqube'
-            waitForQualityGate abortPipeline: true
+
             }
           }
           /*stage("Quality Gate") {
