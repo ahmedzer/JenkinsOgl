@@ -4,9 +4,14 @@ pipeline {
   stage('Test'){
               steps {
                   bat './gradlew test'
-                  bat './gradlew sonarqube'
+
               }
 
+          }
+          stage('sonar') {
+            steps {
+            bat './gradlew sonarqube'
+            }
           }
           stage("Quality Gate") {
                       steps {
