@@ -41,6 +41,9 @@ pipeline {
                     post{
                                                 always{
                                                     slackSend(  message: "Ahmed new build !!!!",)
+                                                    mail to: "ahmedev59@gmail.com",
+                                                    subject: "Test Email",
+                                                    body: "Test"
                                                 }
                                             }
 
