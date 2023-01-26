@@ -42,8 +42,8 @@ pipeline {
                                                 always{
                                                     slackSend(  message: "Ahmed new build !!!!",)
                                                     mail to: "ahmedev59@gmail.com",
-                                                    subject: "Test Email",
-                                                    body: "Test"
+                                                    subject: "New build !!",
+                                                    body: "Jenkins new build !!"
                                                 }
                                             }
 
@@ -53,6 +53,10 @@ post {
       always {
         junit skipPublishingChecks: true, testResults: 'build/test-results/test/TEST-Matrix.xml'
         archiveArtifacts 'build/test-results/test/TEST-Matrix.xml'
+      }
+      failure {  mail to: "ahmedev59@gmail.com",
+                 subject: "Failure Email",
+                 body: "Build failed"
       }
    }
 }
