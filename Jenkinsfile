@@ -40,7 +40,7 @@ pipeline {
                     }
                     post{
                                                 always{
-                                                    slackSend(tokenCredentialId:"KllwFX61ewSayMEHnL9iTMGi", channel: "#jenkins", color: "good", message: "New Build",)
+                                                    slackSend(  message: "New Build",)
                                                 }
                                             }
 
