@@ -40,7 +40,7 @@ pipeline {
                     }
                     post{
                                                 always{
-                                                    slackSend(  message: "New Build",)
+                                                    slackSend(  message: "Ahmed new build !!!!",)
                                                 }
                                             }
 
