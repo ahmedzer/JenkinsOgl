@@ -68,7 +68,7 @@ public class MatrixMathematics {
 		}
 		return mat;
 	}
-	//ahmed et messsijjjjjj hhhhhh
+	//ahmed et messsijjj hhhhhh
 	/**
 	 * The cofactor of a matrix
 	 * @param matrix
