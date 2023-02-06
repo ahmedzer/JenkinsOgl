@@ -76,6 +76,7 @@ public class MatrixMathematics {
 	 * @throws NoSquareException
 	 */
 	public static Matrix cofactor(Matrix matrix) throws NoSquareException {
+		System.out.println("Cofactor");
 		Matrix mat = new Matrix(matrix.getNrows(), matrix.getNcols());
 		for (int i=0;i<matrix.getNrows();i++) {
 			for (int j=0; j<matrix.getNcols();j++) {
